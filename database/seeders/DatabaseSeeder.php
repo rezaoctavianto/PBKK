@@ -37,7 +37,7 @@ class DatabaseSeeder extends Seeder
         //     'body'=> 'Of course, manually specifying the attributes for each model seed is cumbersome. Instead, you can use model factories to conveniently generate large amounts of database records. First, review the model factory documentation to learn how to define your factories.'
         // ]);
         $this->call([UserSeeder::class, CategorySeeder::class]);
-        Post::factory(100)->recycle([
+        Post::factory(150)->recycle([
 
             Category::all(),
             User::all(),
